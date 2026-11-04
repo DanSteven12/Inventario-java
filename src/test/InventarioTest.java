@@ -5,6 +5,7 @@ public class InventarioTest {
     @Test
     void testCalcularSubTotal() {
         int resultado = Inventario.calcularSubtotal(50, 4);
-        assertEquals(200, resultado);
+        // Provocamos un fallo intencional para probar que GitHub Actions detecta el error
+        assertEquals(999, resultado, "Error provocado: el resultado esperado no coincide");
     }
 }
